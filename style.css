@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 0;
   background-color: black;
 }
@@ -12,13 +12,15 @@ header {
   background-color: #333;
   color: white;
   display: flex;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   padding: 10px;
 }
 
 #profile-pic {
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   margin-right: 20px;
   transition: transform 0.3s;
