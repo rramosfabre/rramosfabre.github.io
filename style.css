@@ -10,6 +10,32 @@ body {
   text-align: center;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
 header {
   background-color: #333;
   color: white;
@@ -31,9 +57,22 @@ header {
   transform: scale(1.1);
 }
 
+#profile-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
 h1 {
   margin-top: 50px;
   font-size: 32px;
+}
+
+main {
+  padding: 50px;
+}
+
+section {
+  margin-bottom: 50px;
 }
 
 .tabs {
@@ -85,4 +124,9 @@ h1 {
 
 .social a {
   color: #555;
+}
+
+#contacto p {
+  font-size: 20px;
+  margin-top: 30px;
 }
