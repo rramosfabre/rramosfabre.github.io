@@ -70,3 +70,20 @@ h1 {
     overflow: auto;
   }
 }
+
+/* Estilo para "Sobre mí" */
+.about {
+  background-color: #f1f1f1;
+  padding: 50px;
+}
+
+/* Estilo para las redes sociales */
+.social {
+  background-color: #f1f1f1;
+  padding: 50px;
+}
+
+/* Estilo para los enlaces de las redes sociales */
+.social a {
+  color: #333;
+}
