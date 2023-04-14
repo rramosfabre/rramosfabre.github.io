@@ -71,21 +71,18 @@ h1 {
   }
 }
 
-/* Estilo para "Sobre mí" */
 .about {
   background-color: #f9f9f9;
   padding: 50px;
   color: #333;
 }
 
-/* Estilo para las redes sociales */
 .social {
   background-color: #f9f9f9;
   padding: 50px;
   color: #333;
 }
 
-/* Estilo para los enlaces de las redes sociales */
 .social a {
   color: #555;
 }
