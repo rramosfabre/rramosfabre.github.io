@@ -8,6 +8,7 @@ body {
   background-color: black;
   color: white;
   text-align: center;
+  line-height: 1.6; /* Aumenta el espaciado entre líneas para mejorar la legibilidad */
 }
 
 ul {
