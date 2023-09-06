@@ -14,7 +14,7 @@ body {
 /* Aumenta el tamaño del texto en dispositivos móviles */
 @media only screen and (max-width: 600px) {
   body {
-    font-size: 24px; 
+    font-size: 18px;
   }
 }
 
@@ -66,57 +66,69 @@ header {
 }
 
 #profile-name {
-  font-size: 24px; 
-    color:#f1f1f1; 
-    font-weight:bold; 
+  font-size: 24px;
+  font-weight: bold;
 }
 
 h1 {
-    margin-top:50px; 
-    font-size:32px; 
-    color:#f1f1f1; 
-    font-weight:bold; 
+  margin-top: 50px;
+  font-size: 32px;
 }
 
 main {
-    padding:50px; 
+  padding: 50px;
 }
 
 section {
-    margin-bottom:50px; 
+  margin-bottom: 50px;
 }
 
 .tabs {
-    background-color:#f1f1f1; 
-    overflow:hidden; 
+  background-color: #f1f1f1;
+  overflow: hidden;
 }
 
 .tab {
-    float:left; 
-    border:none; 
-    outline:none; 
-    cursor:pointer; 
-    padding:14px16px; 
-    background-colorinherit; 
-    font-size17px; 
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-size: 17px;
 }
 
 .tabcontent {
-    display:none; 
-    padding50px; 
-    border-topnone; 
+  display: none;
+  padding: 50px;
+  border-top: none;
 }
 
 .active {
-    background-color:#ccc; 
+  background-color: #ccc;
 }
 
-.active .tablink {color:white;}
+.active .tablink {
+  color: white;
+}
 
-.about {background-color:#f9f9f9;padding50px;color:#333;}
+.about {
+  background-color: #f9f9f9;
+  padding: 50px;
+  color: #333;
+}
 
-.social {background-color:#f9f9f9;padding50px;color:#333;}
+.social {
+  background-color: #f9f9f9;
+  padding: 50px;
+  color: #333;
+}
 
-.social a {color:#007BFF;} 
+.social a {
+  color: #007BFF; /* Cambia el color azul claro para hacerlo más visible */
+}
 
-#contacto p {font-size20px;margin-top30px;}
+#contacto p {
+  font-size: 20px;
+  margin-top: 30px;
+}
