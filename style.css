@@ -14,7 +14,7 @@ body {
 /* Aumenta el tamaño del texto en dispositivos móviles */
 @media only screen and (max-width: 600px) {
   body {
-    font-size: 18px;
+    font-size: 24px; /* Aumenta el tamaño del texto para mejorar la legibilidad */
   }
 }
 
@@ -38,6 +38,7 @@ nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  font-size: 18px; /* Aumenta el tamaño del texto de navegación */
 }
 
 nav a:hover {
@@ -66,13 +67,13 @@ header {
 }
 
 #profile-name {
-  font-size: 24px;
+  font-size: 28px; /* Aumenta el tamaño del nombre del perfil */
   font-weight: bold;
 }
 
 h1 {
   margin-top: 50px;
-  font-size: 32px;
+  font-size: 36px; /* Aumenta el tamaño del encabezado principal */
 }
 
 main {
@@ -95,7 +96,7 @@ section {
   cursor: pointer;
   padding: 14px 16px;
   background-color: inherit;
-  font-size: 17px;
+  font-size: 18px; /* Aumenta el tamaño de las pestañas */
 }
 
 .tabcontent {
@@ -116,6 +117,7 @@ section {
   background-color: #f9f9f9;
   padding: 50px;
   color: #333;
+  font-size: 20px; /* Aumenta el tamaño del texto en la sección 'Acerca de' */
 }
 
 .social {
@@ -125,10 +127,10 @@ section {
 }
 
 .social a {
-  color: #007BFF; /* Cambia el color azul claro para hacerlo más visible */
+  color: #007BFF;
 }
 
 #contacto p {
-  font-size: 20px;
+  font-size: 24px; /* Aumenta el tamaño del texto en la sección de contacto */
   margin-top: 30px;
 }
