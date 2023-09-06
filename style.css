@@ -8,7 +8,14 @@ body {
   background-color: black;
   color: white;
   text-align: center;
-  line-height: 1.6; /* Aumenta el espaciado entre líneas para mejorar la legibilidad */
+  line-height: 1.6;
+}
+
+/* Aumenta el tamaño del texto en dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 18px;
+  }
 }
 
 ul {
@@ -105,12 +112,6 @@ section {
   color: white;
 }
 
-@media only screen and (max-width: 600px) {
-  .tabs {
-    overflow: auto;
-  }
-}
-
 .about {
   background-color: #f9f9f9;
   padding: 50px;
@@ -124,7 +125,7 @@ section {
 }
 
 .social a {
-  color: #555;
+  color: #007BFF; /* Cambia el color azul claro para hacerlo más visible */
 }
 
 #contacto p {
