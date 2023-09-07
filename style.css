@@ -130,18 +130,18 @@ section {
 }
 
 .social a {
-  font-size: 22px; /* El texto en la sección de redes sociales ahora es más grande */
+  font-size: 24px; /* El texto en la sección de redes sociales ahora es más grande */
   color: #AACCFF; /* Los enlaces a las redes sociales ahora son de color azul claro al pasar el ratón por encima */
 }
 
 #contacto p {
-  font-size: 22px;
+  font-size: 24px;
   margin-top: 30px;
 }
 
 .email a {
   color: #AACCFF; /* El correo electrónico ahora es de color azul claro */
-  font-size: 22px; /* El tamaño de la fuente del correo electrónico ahora es de 18px */
+  font-size: 28px; /* El tamaño de la fuente del correo electrónico ahora es de 28px */
   border: 2px solid #AACCFF; /* Se agregó un borde de 2px al texto del correo electrónico */
   color: #000; /* Se aumentó el contraste del texto del correo electrónico al 150% */
 }
