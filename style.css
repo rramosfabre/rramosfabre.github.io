@@ -126,15 +126,19 @@ section {
 .social {
   background-color: #f9f9f9;
   padding: 50px;
-  color: #333;
+  color: #AACCFF; /* Los enlaces a las redes sociales ahora son de color azul claro */
 }
 
 .social a {
   font-size: 18px; /* El texto en la sección de redes sociales ahora es más grande */
-  color: #AACCFF; /* El texto en las redes sociales ahora es azul claro al pasar el ratón por encima */
+  color: #AACCFF; /* Los enlaces a las redes sociales ahora son de color azul claro al pasar el ratón por encima */
 }
 
 #contacto p {
   font-size: 20px;
   margin-top: 30px;
+}
+
+.email a {
+  color: #AACCFF; /* El correo electrónico ahora es de color azul claro */
 }
