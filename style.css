@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Georgia", serif;
   margin: 0;
   background-color: black;
   color: #ccc;
@@ -131,7 +131,7 @@ section {
 
 .social a {
   font-size: 18px; /* El texto en la sección de redes sociales ahora es más grande */
-  color: #00A2FF;
+  color: #00A2FF; /* El texto en las redes sociales ahora es azul claro */
 }
 
 #contacto p {
