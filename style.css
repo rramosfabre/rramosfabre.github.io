@@ -131,7 +131,11 @@ section {
 
 .social a {
   font-size: 18px; /* El texto en la sección de redes sociales ahora es más grande */
-  color: #00A2FF; /* El texto en las redes sociales ahora es azul claro */
+  color: #ccc; /* El texto en las redes sociales ahora es gris por defecto */
+}
+
+.social a:hover {
+  color: #FF4500; /* El texto en las redes sociales ahora es rojo al pasar el ratón por encima */
 }
 
 #contacto p {
