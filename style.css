@@ -19,7 +19,7 @@ body {
   }
 
   .social a {
-    color: #00A2FF;
+    color: #AACCFF; /* Los enlaces a las redes sociales ahora son de color azul claro */
   }
 }
 
@@ -126,12 +126,12 @@ section {
 .social {
   background-color: #f9f9f9;
   padding: 50px;
-  color: #AACCFF; /* Los enlaces a las redes sociales ahora son de color azul claro */
+  color: #FFF; /* Los enlaces a las redes sociales ahora son de color blanco */
 }
 
 .social a {
   font-size: 18px; /* El texto en la sección de redes sociales ahora es más grande */
-  color: #AACCFF; /* Los enlaces a las redes sociales ahora son de color azul claro al pasar el ratón por encima */
+  color: #FFF; /* Los enlaces a las redes sociales ahora son de color blanco al pasar el ratón por encima */
 }
 
 #contacto p {
@@ -140,8 +140,8 @@ section {
 }
 
 .email a {
-  color: #AACCFF; /* El correo electrónico ahora es de color azul claro */
+  color: #FFF; /* El correo electrónico ahora es de color blanco */
   font-size: 18px; /* El tamaño de la fuente del correo electrónico ahora es de 18px */
-  border: 2px solid #AACCFF; /* Se agregó un borde de 2px al texto del correo electrónico */
-  color: #000; /* Se aumentó el contraste del texto del correo electrónico al 150% */
+  border: 2px solid #FFF; /* Se agregó un borde de 2px al texto del correo electrónico */
+  color: #FFF; /* Se aumentó el contraste del texto del correo electrónico al 100% */
 }
