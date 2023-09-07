@@ -3,12 +3,13 @@
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   background-color: black;
-  color: white;
+  color: #ccc;
   text-align: center;
   line-height: 1.6;
+  font-size: 24px;
 }
 
 /* Aumenta el tamaño del texto en dispositivos móviles */
