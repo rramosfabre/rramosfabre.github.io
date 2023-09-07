@@ -16,6 +16,10 @@ body {
   body {
     font-size: 18px;
   }
+
+  .social a {
+    color: #00A2FF;
+  }
 }
 
 ul {
@@ -125,10 +129,8 @@ section {
 }
 
 .social a {
-  color: #00A2FF; /* Color azul claro para los enlaces */
-  text-decoration: none; /* Quita la subrayado en los enlaces */
-  font-weight: bold; /* Texto en negrita */
-  transition: color 0.3s; /* Efecto de transición suave al pasar el ratón */
+  font-size: 18px; /* El texto en la sección de redes sociales ahora es más grande */
+  color: #00A2FF;
 }
 
 #contacto p {
