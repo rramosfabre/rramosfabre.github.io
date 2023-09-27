@@ -5,8 +5,8 @@
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
-  background-color: black;
-  color: #ccc;
+  background-color: #111; /* Cambiado de negro (#000) a un negro ligeramente más claro (#111) */
+  color: #eee; /* Cambiado de #ccc a un color de texto más claro (#eee) */
   text-align: center;
   line-height: 1.6;
   font-size: 24px;
@@ -126,12 +126,12 @@ section {
 .social {
   background-color: #f9f9f9;
   padding: 50px;
-  color: #AACCFF; /* Los enlaces a las redes sociales ahora son de color azul claro */
+  color: #AACCFF;
 }
 
 .social a {
-  font-size: 24px; /* El texto en la sección de redes sociales ahora es más grande */
-  color: #AACCFF; /* Los enlaces a las redes sociales ahora son de color azul claro al pasar el ratón por encima */
+  font-size: 24px;
+  color: #AACCFF;
 }
 
 #contacto p {
@@ -140,8 +140,8 @@ section {
 }
 
 .email a {
-  color: #AACCFF; /* El correo electrónico ahora es de color azul claro */
-  font-size: 28px; /* El tamaño de la fuente del correo electrónico ahora es de 28px */
-  border: 2px solid #AACCFF; /* Se agregó un borde de 2px al texto del correo electrónico */
-  color: #000; /* Se aumentó el contraste del texto del correo electrónico al 150% */
+  color: #AACCFF;
+  font-size: 28px;
+  border: 2px solid #AACCFF;
+  color: #000;
 }
