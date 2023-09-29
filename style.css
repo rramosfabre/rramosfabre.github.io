@@ -15,7 +15,7 @@ body {
 /* Aumenta el tamaño del texto en dispositivos móviles */
 @media only screen and (max-width: 600px) {
   body {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .social a {
