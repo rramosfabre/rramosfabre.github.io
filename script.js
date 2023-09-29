@@ -1,11 +1,13 @@
 function openTab(evt, tabName) {
   // Oculta todos los contenidos de las pestañas
-  document.querySelectorAll(".tabcontent").forEach(tab => {
+  var tabcontents = document.querySelectorAll(".tabcontent");
+  tabcontents.forEach(tab => {
     tab.style.display = "none";
   });
 
   // Desactiva todas las pestañas
-  document.querySelectorAll(".tab").forEach(tab => {
+  var tablinks = document.querySelectorAll(".tab");
+  tablinks.forEach(tab => {
     tab.classList.remove("active");
   });
 
@@ -13,7 +15,5 @@ function openTab(evt, tabName) {
   document.getElementById(tabName).style.display = "block";
 
   // Activa la pestaña seleccionada
-  if (!evt.currentTarget.classList.contains("active")) {
-    evt.currentTarget.classList.add("active");
-  }
+  evt.currentTarget.classList.add("active");
 }
