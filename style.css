@@ -5,8 +5,8 @@
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
-  background-color: #111; /* Cambiado de negro (#000) a un negro ligeramente más claro (#111) */
-  color: #eee; /* Cambiado de #ccc a un color de texto más claro (#eee) */
+  background-color: #111;
+  color: #fff; /* Cambiado a blanco (#fff) para un texto más claro */
   text-align: center;
   line-height: 1.6;
   font-size: 24px;
@@ -123,15 +123,16 @@ section {
   color: #333;
 }
 
+/* Cambiado el fondo de la sección "social" */
 .social {
-  background-color: #f9f9f9;
+  background-color: #00A2FF; /* Cambiado a azul claro para mayor contraste */
   padding: 50px;
-  color: #AACCFF;
+  color: #fff; /* Cambiado a blanco para mayor contraste */
 }
 
 .social a {
   font-size: 24px;
-  color: #00A2FF;
+  color: #fff; /* Cambiado a blanco para mayor contraste */
 }
 
 #contacto p {
