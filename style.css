@@ -1,12 +1,14 @@
+/* Establece un estilo básico para todos los elementos */
 * {
   box-sizing: border-box;
 }
 
+/* Estilos generales para el cuerpo de la página */
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   background-color: #111;
-  color: #fff; /* Cambiado a blanco (#fff) para un texto más claro */
+  color: #fff;
   text-align: center;
   line-height: 1.6;
   font-size: 24px;
@@ -17,18 +19,21 @@ body {
   body {
     font-size: 22px;
   }
-
+  
+  /* Cambia el color de los enlaces en la sección "social" en dispositivos móviles */
   .social a {
     color: #00A2FF;
   }
 }
 
+/* Estilos para la lista no ordenada (ul) */
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
+/* Estilos para la barra de navegación (nav) */
 nav {
   display: flex;
   justify-content: space-between;
@@ -49,6 +54,7 @@ nav a:hover {
   color: #ccc;
 }
 
+/* Estilos para el encabezado (header) */
 header {
   background-color: #333;
   color: white;
@@ -58,6 +64,7 @@ header {
   padding: 20px;
 }
 
+/* Estilos para la imagen de perfil */
 #profile-pic {
   width: 150px;
   height: 150px;
@@ -70,24 +77,29 @@ header {
   transform: scale(1.1);
 }
 
+/* Estilos para el nombre de perfil */
 #profile-name {
   font-size: 24px;
   font-weight: bold;
 }
 
+/* Estilos para los encabezados (h1) */
 h1 {
   margin-top: 50px;
   font-size: 32px;
 }
 
+/* Estilos generales para el contenido principal */
 main {
   padding: 50px;
 }
 
+/* Estilos generales para las secciones */
 section {
   margin-bottom: 50px;
 }
 
+/* Estilos para las pestañas de navegación (tabs) */
 .tabs {
   background-color: #f1f1f1;
   overflow: hidden;
@@ -117,29 +129,33 @@ section {
   color: white;
 }
 
+/* Estilos para la sección "Acerca de" */
 .about {
   background-color: #f9f9f9;
   padding: 50px;
   color: #333;
 }
 
-/* Cambiado el fondo de la sección "social" */
+/* Estilos para la sección "Social" */
 .social {
-  background-color: #00A2FF; /* Cambiado a azul claro para mayor contraste */
+  background-color: #00A2FF;
   padding: 50px;
-  color: #fff; /* Cambiado a blanco para mayor contraste */
+  color: #fff;
 }
 
+/* Estilos para los enlaces en la sección "Social" */
 .social a {
   font-size: 24px;
-  color: #fff; /* Cambiado a blanco para mayor contraste */
+  color: #fff;
 }
 
+/* Estilos para la sección de "Contacto" */
 #contacto p {
   font-size: 24px;
   margin-top: 30px;
 }
 
+/* Estilos para los enlaces de correo electrónico */
 .email a {
   color: #AACCFF;
   font-size: 28px;
