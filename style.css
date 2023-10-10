@@ -22,7 +22,12 @@ body {
   
   /* Cambia el color de los enlaces en la sección "social" en dispositivos móviles */
   .social a {
-    color: #00A2FF;
+    font-size: 26px; /* Aumenta el tamaño de fuente de los enlaces en dispositivos móviles */
+    padding: 10px 20px; /* Aumenta el espacio alrededor de los enlaces en dispositivos móviles */
+    background-color: #00A2FF; /* Cambia el color de fondo de los enlaces en dispositivos móviles */
+    color: #fff; /* Cambia el color de texto de los enlaces en dispositivos móviles */
+    border-radius: 5px; /* Agrega esquinas redondeadas a los enlaces en dispositivos móviles */
+    text-decoration: none; /* Elimina la subrayado de los enlaces */
   }
 }
 
@@ -145,8 +150,12 @@ section {
 
 /* Estilos para los enlaces en la sección "Social" */
 .social a {
-  font-size: 24px;
+  font-size: 26px;
   color: #fff;
+  padding: 10px 20px;
+  background-color: #00A2FF;
+  border-radius: 5px;
+  text-decoration: none;
 }
 
 /* Estilos para la sección de "Contacto" */
@@ -162,3 +171,4 @@ section {
   border: 2px solid #AACCFF;
   color: #000;
 }
+
