@@ -17,12 +17,12 @@ body {
 /* Aumenta el tamaño del texto en dispositivos móviles */
 @media only screen and (max-width: 600px) {
   body {
-    font-size: 28px; /* Aumentado para mejorar la legibilidad */
+    font-size: 24px; /* Aumentado para mejorar la legibilidad */
   }
   
   /* Cambia el color de los enlaces en la sección "social" en dispositivos móviles */
   .social a {
-    font-size: 30px; /* Aumenta el tamaño de fuente de los enlaces en dispositivos móviles */
+    font-size: 24px; /* Aumenta el tamaño de fuente de los enlaces en dispositivos móviles */
     padding: 15px 25px; /* Aumenta el espacio alrededor de los enlaces en dispositivos móviles */
     background-color: #00A2FF; /* Cambia el color de fondo de los enlaces en dispositivos móviles */
     color: #fff; /* Cambia el color de texto de los enlaces en dispositivos móviles */
@@ -163,7 +163,7 @@ section {
 
 /* Estilos para los enlaces en la sección "Social" */
 .social a {
-   font-size:30px; 
+   font-size:24px; 
    color:#fff; 
    padding-top :15px; 
    padding-bottom :15px; 
@@ -176,14 +176,14 @@ section {
 
 /* Estilos para la sección de "Contacto" */
 #contacto p {
-  font-size: 28px;
+  font-size: 24px;
   margin-top: 30px;
 }
 
 /* Estilos para los enlaces de correo electrónico */
 .email a {
   color: #AACCFF;
-  font-size: 32px;
+  font-size: 24px;
   border: 2px solid #AACCFF;
   color: #000;
 }
