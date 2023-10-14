@@ -17,16 +17,16 @@ body {
 /* Aumenta el tamaño del texto en dispositivos móviles */
 @media only screen and (max-width: 600px) {
   body {
-    font-size: 22px;
+    font-size: 28px; /* Aumentado para mejorar la legibilidad */
   }
   
   /* Cambia el color de los enlaces en la sección "social" en dispositivos móviles */
   .social a {
-    font-size: 26px; /* Aumenta el tamaño de fuente de los enlaces en dispositivos móviles */
-    padding: 10px 20px; /* Aumenta el espacio alrededor de los enlaces en dispositivos móviles */
+    font-size: 30px; /* Aumenta el tamaño de fuente de los enlaces en dispositivos móviles */
+    padding: 15px 25px; /* Aumenta el espacio alrededor de los enlaces en dispositivos móviles */
     background-color: #00A2FF; /* Cambia el color de fondo de los enlaces en dispositivos móviles */
     color: #fff; /* Cambia el color de texto de los enlaces en dispositivos móviles */
-    border-radius: 5px; /* Agrega esquinas redondeadas a los enlaces en dispositivos móviles */
+    border-radius: 10px; /* Agrega esquinas redondeadas a los enlaces en dispositivos móviles */
     text-decoration: none; /* Elimina la subrayado de los enlaces */
   }
 }
@@ -72,103 +72,118 @@ header {
 /* Estilos para la imagen de perfil */
 #profile-pic {
   width: 150px;
-  height: 150px;
+  height: auto; /* Asegura que la imagen mantenga su proporción original */
   border-radius: 50%;
   margin-right: 20px;
-  transition: transform 0.3s;
 }
 
 #profile-pic:hover {
-  transform: scale(1.1);
+   transform: scale(1.1);
+   transition-duration: .5s; /* Suaviza la transición al pasar el cursor sobre la imagen */
 }
 
 /* Estilos para el nombre de perfil */
 #profile-name {
-  font-size: 24px;
-  font-weight: bold;
+   font-size:24px; 
+   font-weight:bold; 
+   color:#AACCFF; /* Cambia el color del nombre del perfil a un tono azul claro */
 }
 
 /* Estilos para los encabezados (h1) */
 h1 {
-  margin-top: 50px;
-  font-size: 32px;
+   margin-top:50px; 
+   font-size:36px; /* Aumenta el tamaño del encabezado para destacar más las secciones */
+   color:#AACCFF; /* Cambia el color del encabezado a un tono azul claro */
 }
 
 /* Estilos generales para el contenido principal */
 main {
-  padding: 50px;
+   padding-top :70px; 
+   padding-bottom :70px; 
+   padding-left :50px; 
+   padding-right :50px; 
 }
 
 /* Estilos generales para las secciones */
 section {
-  margin-bottom: 50px;
+   margin-bottom :70px; 
 }
 
 /* Estilos para las pestañas de navegación (tabs) */
 .tabs {
-  background-color: #f1f1f1;
-  overflow: hidden;
+   background-color:#f1f1f1; 
+   overflow:hidden; 
 }
 
 .tab {
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-size: 17px;
+   float:left; 
+   border:none; 
+   outline:none; 
+   cursor:pointer; 
+   padding-top :20px; 
+   padding-bottom :20px; 
+   padding-left :22px; 
+   padding-right :22px; 
+   background-color :inherit; 
+   font-size :19px; 
 }
 
 .tabcontent {
-  display: none;
-  padding: 50px;
-  border-top: none;
+   display:none; 
+   padding-top :70px; 
+   padding-bottom :70px; 
+   padding-left :50px; 
+   padding-right :50px; 
+   border-top:none; 
 }
 
-.active {
-  background-color: #ccc;
-}
+.active {background-color:#ccc;}
 
-.active .tablink {
-  color: white;
-}
+.active .tablink {color:white;}
 
 /* Estilos para la sección "Acerca de" */
 .about {
-  background-color: #f9f9f9;
-  padding: 50px;
-  color: #333;
+    background-color:#f9f9f9; 
+    padding-top :70px; 
+    padding-bottom :70px; 
+    padding-left :50px; 
+    padding-right :50px; 
+    color:#333;
 }
 
 /* Estilos para la sección "Social" */
 .social {
-  background-color: #00A2FF;
-  padding: 50px;
-  color: #fff;
+   background-color:#00A2FF; 
+   padding-top :70px; 
+   padding-bottom :70px; 
+   padding-left :50px; 
+   padding-right :50px; 
+   color:#fff;
 }
 
 /* Estilos para los enlaces en la sección "Social" */
 .social a {
-  font-size: 26px;
-  color: #fff;
-  padding: 10px 20px;
-  background-color: #00A2FF;
-  border-radius: 5px;
-  text-decoration: none;
+   font-size:30px; 
+   color:#fff; 
+   padding-top :15px; 
+   padding-bottom :15px; 
+   padding-left :25px; 
+   padding-right :25px; 
+   background-color:#00A2FF; 
+   border-radius:10px; 
+   text-decoration:none;
 }
 
 /* Estilos para la sección de "Contacto" */
 #contacto p {
-  font-size: 24px;
+  font-size: 28px;
   margin-top: 30px;
 }
 
 /* Estilos para los enlaces de correo electrónico */
 .email a {
   color: #AACCFF;
-  font-size: 28px;
+  font-size: 32px;
   border: 2px solid #AACCFF;
   color: #000;
 }
-
