@@ -1,44 +1,52 @@
-/* Establece un estilo básico para todos los elementos */
+:root {
+  --main-font: "Roboto", sans-serif;
+  --main-bg-color: #111;
+  --main-text-color: #fff;
+  --link-color: #AACCFF;
+  --tab-bg-color: #f1f1f1;
+  --active-color: #ccc;
+  --about-bg-color: #f9f9f9;
+  --about-text-color: #333;
+  --social-bg-color: #00A2FF;
+  --social-link-color: #fff;
+  --contact-text-color: #000;
+}
+
 * {
   box-sizing: border-box;
 }
 
-/* Estilos generales para el cuerpo de la página */
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--main-font);
   margin: 0;
-  background-color: #111;
-  color: #fff;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
   text-align: center;
   line-height: 1.6;
   font-size: 24px;
 }
 
-/* Aumenta el tamaño del texto en dispositivos móviles */
 @media only screen and (max-width: 600px) {
   body {
-    font-size: 22px; /* Aumentado para mejorar la legibilidad */
+    font-size: 22px;
   }
   
-  /* Cambia el color de los enlaces en la sección "social" en dispositivos móviles */
   .social a {
-    font-size: 22px; /* Aumenta el tamaño de fuente de los enlaces en dispositivos móviles */
-    padding: 15px 25px; /* Aumenta el espacio alrededor de los enlaces en dispositivos móviles */
-    background-color: #00A2FF; /* Cambia el color de fondo de los enlaces en dispositivos móviles */
-    color: #fff; /* Cambia el color de texto de los enlaces en dispositivos móviles */
-    border-radius: 10px; /* Agrega esquinas redondeadas a los enlaces en dispositivos móviles */
-    text-decoration: none; /* Elimina la subrayado de los enlaces */
+    font-size: 22px;
+    padding: 15px 25px;
+    background-color: var(--social-bg-color);
+    color: var(--social-link-color);
+    border-radius: 10px;
+    text-decoration: none;
   }
 }
 
-/* Estilos para la lista no ordenada (ul) */
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* Estilos para la barra de navegación (nav) */
 nav {
   display: flex;
   justify-content: space-between;
@@ -59,7 +67,6 @@ nav a:hover {
   color: #ccc;
 }
 
-/* Estilos para el encabezado (header) */
 header {
   background-color: #333;
   color: white;
@@ -69,49 +76,40 @@ header {
   padding: 20px;
 }
 
-/* Estilos para la imagen de perfil */
 #profile-pic {
   width: 150px;
-  height: auto; /* Asegura que la imagen mantenga su proporción original */
+  height: auto;
   border-radius: 50%;
   margin-right: 20px;
 }
 
 #profile-pic:hover {
    transform: scale(1.1);
-   transition-duration: .5s; /* Suaviza la transición al pasar el cursor sobre la imagen */
+   transition-duration: .5s;
 }
 
-/* Estilos para el nombre de perfil */
 #profile-name {
    font-size:36px; 
    font-weight:bold; 
-   color:#AACCFF; /* Cambia el color del nombre del perfil a un tono azul claro */
+   color:var(--link-color);
 }
 
-/* Estilos para los encabezados (h1) */
 h1 {
    margin-top:50px; 
-   font-size:36px; /* Aumenta el tamaño del encabezado para destacar más las secciones */
-   color:#AACCFF; /* Cambia el color del encabezado a un tono azul claro */
+   font-size:36px;
+   color:var(--link-color);
 }
 
-/* Estilos generales para el contenido principal */
-main {
-   padding-top :70px; 
-   padding-bottom :70px; 
-   padding-left :50px; 
-   padding-right :50px; 
+main, .tabcontent {
+   padding: 70px 50px;
 }
 
-/* Estilos generales para las secciones */
 section {
-   margin-bottom :70px; 
+   margin-bottom: 70px;
 }
 
-/* Estilos para las pestañas de navegación (tabs) */
 .tabs {
-   background-color:#f1f1f1; 
+   background-color:var(--tab-bg-color); 
    overflow:hidden; 
 }
 
@@ -120,56 +118,34 @@ section {
    border:none; 
    outline:none; 
    cursor:pointer; 
-   padding-top :20px; 
-   padding-bottom :20px; 
-   padding-left :22px; 
-   padding-right :22px; 
-   background-color :inherit; 
-   font-size :19px; 
+   padding: 20px 22px;
+   background-color: inherit; 
+   font-size: 19px; 
 }
 
-.tabcontent {
-   display:none; 
-   padding-top :70px; 
-   padding-bottom :70px; 
-   padding-left :50px; 
-   padding-right :50px; 
-   border-top:none; 
-}
-
-.active {background-color:#ccc;}
+.active {background-color:var(--active-color);}
 
 .active .tablink {color:white;}
 
-/* Estilos para la sección "Acerca de" */
+.about, .social {
+    padding: 70px 50px;
+    color: var(--about-text-color);
+}
+
 .about {
-    background-color:#f9f9f9; 
-    padding-top :70px; 
-    padding-bottom :70px; 
-    padding-left :50px; 
-    padding-right :50px; 
-    color:#333;
+    background-color:var(--about-bg-color);
 }
 
-/* Estilos para la sección "Social" */
 .social {
-   background-color:#00A2FF; 
-   padding-top :70px; 
-   padding-bottom :70px; 
-   padding-left :50px; 
-   padding-right :50px; 
-   color:#fff;
+   background-color:var(--social-bg-color);
+   color:var(--social-link-color);
 }
 
-/* Estilos para los enlaces en la sección "Social" */
 .social a {
    font-size:22px; 
-   color:#fff; 
-   padding-top :15px; 
-   padding-bottom :15px; 
-   padding-left :25px; 
-   padding-right :25px; 
-   background-color:#00A2FF; 
+   color:var(--social-link-color); 
+   padding: 15px 25px;
+   background-color:var(--social-bg-color); 
    border-radius:10px; 
    text-decoration:none;
 }
@@ -182,8 +158,8 @@ section {
 
 /* Estilos para los enlaces de correo electrónico */
 .email a {
-  color: #AACCFF;
+  color: var(--link-color);
   font-size: 18px;
-  border: 2px solid #AACCFF;
-  color: #000;
+  border: 2px solid var(--link-color);
+  color: var(--contact-text-color);
 }
