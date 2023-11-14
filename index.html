@@ -3,7 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Asegura que la página sea responsive -->
+	<meta name="description" content="Página web personal de Ramon Ramos Fabre.">
+	<meta name="keywords" content="Ramon Ramos Fabre, Página web personal, Tecnología, Naturaleza, Animales, Deporte, Baloncesto, Libros, Escritura">
 	<title>Ramon Ramos - Página web personal</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
 	<script src="script.js"></script>
 </head>
@@ -40,13 +43,21 @@
         </section> 
         <section id="contacto">
             <h1>Contacto</h1> 
-            <p>Puedes contactarme a través de mi correo electrónico:</p> 
-            <p class="email-link"><a href="mailto:rramosfabre@protonmail.com">rramosfabre@protonmail.com</a></p> <!-- Añade una clase para el enlace del correo electrónico -->
+            <form action="mailto:rramosfabre@protonmail.com" method="post" enctype="text/plain">
+                <label for="name">Nombre:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="mail">Correo electrónico:</label><br>
+                <input type="text" id="mail" name="mail"><br>
+                <label for="comment">Comentario:</label><br>
+                <input type="text" id="comment" name="comment" size="50"><br><br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Restablecer">
+            </form>
         </section> 
     </main> 
     <footer> <!-- Añade un pie de página -->
         <p>© 2023 Ramon Ramos Fabre. Todos los derechos reservados.</p> 
     </footer> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body> 
 </html> 
-
