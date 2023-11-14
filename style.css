@@ -23,16 +23,16 @@ body {
   color: var(--main-text-color);
   text-align: center;
   line-height: 1.6;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 600px) {
   body {
-    font-size: 22px;
+    font-size: 18px;
   }
   
   .social a {
-    font-size: 22px;
+    font-size: 18px;
     padding: 15px 25px;
     background-color: var(--social-bg-color);
     color: var(--social-link-color);
@@ -89,14 +89,14 @@ header {
 }
 
 #profile-name {
-   font-size:36px; 
+   font-size:30px; 
    font-weight:bold; 
    color:var(--link-color);
 }
 
 h1 {
    margin-top:50px; 
-   font-size:36px;
+   font-size:30px;
    color:var(--link-color);
 }
 
@@ -120,7 +120,7 @@ section {
    cursor:pointer; 
    padding: 20px 22px;
    background-color: inherit; 
-   font-size: 19px; 
+   font-size: 17px; 
 }
 
 .active {background-color:var(--active-color);}
@@ -142,7 +142,7 @@ section {
 }
 
 .social a {
-   font-size:22px; 
+   font-size:18px; 
    color:var(--social-link-color); 
    padding: 15px 25px;
    background-color:var(--social-bg-color); 
@@ -150,16 +150,14 @@ section {
    text-decoration:none;
 }
 
-/* Estilos para la sección de "Contacto" */
 #contacto p {
-  font-size: 22px;
+  font-size: 18px;
   margin-top: 30px;
 }
 
-/* Estilos para los enlaces de correo electrónico */
 .email a {
   color: var(--link-color);
-  font-size: 18px;
+  font-size: 16px;
   border: 2px solid var(--link-color);
   color: var(--contact-text-color);
-}
+}  
