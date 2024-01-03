@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;400&display=swap');
+
 :root {
-  --main-font: "Roboto", sans-serif;
+  --main-font: 'Open Sans', sans-serif;
+  --heading-font: 'Roboto', sans-serif;
   --main-bg-color: #111;
   --main-text-color: #fff;
   --link-color: #AACCFF;
+  --link-hover-color: #88BEEC;
   --tab-bg-color: #f1f1f1;
   --active-color: #ccc;
   --about-bg-color: #f9f9f9;
@@ -10,15 +14,18 @@
   --social-bg-color: #00A2FF;
   --social-link-color: #fff;
   --contact-text-color: #000;
+  --transition-speed: 0.3s;
 }
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: background-color var(--transition-speed), color var(--transition-speed);
 }
 
 body {
   font-family: var(--main-font);
-  margin: 0;
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
   text-align: center;
@@ -34,130 +41,44 @@ body {
   .social a {
     font-size: 18px;
     padding: 15px 25px;
-    background-color: var(--social-bg-color);
-    color: var(--social-link-color);
-    border-radius: 10px;
-    text-decoration: none;
   }
 }
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+a:hover, .tab:hover, .social a:hover {
+  transform: scale(1.05);
+  color: var(--link-hover-color);
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav li {
-  margin-right: 20px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: #ccc;
-}
-
-header {
-  background-color: #333;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-
-#profile-pic {
-  width: 150px;
+img {
+  max-width: 100%;
   height: auto;
-  border-radius: 50%;
-  margin-right: 20px;
-}
-
-#profile-pic:hover {
-   transform: scale(1.1);
-   transition-duration: .5s;
-}
-
-#profile-name {
-   font-size:30px; 
-   font-weight:bold; 
-   color:var(--link-color);
-}
-
-h1 {
-   margin-top:50px; 
-   font-size:30px;
-   color:var(--link-color);
-}
-
-main, .tabcontent {
-   padding: 70px 50px;
 }
 
 section {
-   margin-bottom: 70px;
+  padding-bottom: 50px;
 }
 
-.tabs {
-   background-color:var(--tab-bg-color); 
-   overflow:hidden; 
+input, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-.tab {
-   float:left; 
-   border:none; 
-   outline:none; 
-   cursor:pointer; 
-   padding: 20px 22px;
-   background-color: inherit; 
-   font-size: 17px; 
+input[type=submit] {
+  width: 100%;
+  background-color: var(--link-color);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.active {background-color:var(--active-color);}
-
-.active .tablink {color:white;}
-
-.about, .social {
-    padding: 70px 50px;
-    color: var(--about-text-color);
+input[type=submit]:hover {
+  background-color: var(--link-hover-color);
 }
-
-.about {
-    background-color:var(--about-bg-color);
-}
-
-.social {
-   background-color:var(--social-bg-color);
-   color:var(--social-link-color);
-}
-
-.social a {
-   font-size:18px; 
-   color:var(--social-link-color); 
-   padding: 15px 25px;
-   background-color:var(--social-bg-color); 
-   border-radius:10px; 
-   text-decoration:none;
-}
-
-#contacto p {
-  font-size: 18px;
-  margin-top: 30px;
-}
-
-.email a {
-  color: var(--link-color);
-  font-size: 16px;
-  border: 2px solid var(--link-color);
-  color: var(--contact-text-color);
-}  
