@@ -1,54 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<meta name="description" content="Página web personal de Ramon Ramos Fabre.">
-	<meta name="keywords" content="Ramon Ramos Fabre, Página web personal, Tecnología, Naturaleza, Animales, Deporte, Baloncesto, Libros, Escritura">
-	<title>Ramon Ramos - Página web personal</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="style.css">
-	<script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Página web personal de Ramon Ramos Fabre.">
+    <meta name="keywords" content="Ramon Ramos Fabre, Página web personal, Tecnología, Naturaleza, Animales, Deporte, Baloncesto, Libros, Escritura">
+    <title>Ramon Ramos - Página web personal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body, html {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+        }
+
+        header {
+            margin: 20px 0;
+        }
+
+        #profile-pic {
+            width: 120px;
+            height: 120px;
+        }
+
+        .nav-links a, .social-links a, .email-link a {
+            color: white;
+            padding: 10px;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        .btn {
+            width: 300px; /* Ensures all buttons are the same width */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .btn {
+                width: 80%;
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
 <body>
-	<header>
-		<div class="profile-img-container">
-			<img id="profile-pic" src="rramosfabre-img.jpg" alt="Imagen de perfil">
-			<div id="profile-name">Ramon Ramos Fabre</div>
-		</div>
-		<nav>
-			<ul class="nav-links"> 
-				<li><a href="#about-me">Sobre mí</a></li>
-				<li><a href="#social-media">Redes sociales</a></li>
-				<li><a href="#contacto">Contacto</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<section id="about-me">
-			<h1>Sobre mí</h1>
-			<p>¡Hola! Soy Ramon Ramos, un apasionado de la tecnología, amante de la naturaleza y de los animales y fanático del deporte, en especial el baloncesto. Además, me encanta sumergirme en libros y dar rienda suelta a mi creatividad con la escritura. ¡Bienvenidos a mi mundo! 😄📱🐶🏀📚✍️</p>
-		</section>
-		<section id="social-media">
-			<h1>Redes sociales</h1>
-			<ul class="social-links"> 
-				<li><a href="https://www.facebook.com/rramosfabre">Facebook</a></li>
-				<li><a href="https://www.instagram.com/rramosfabre">Instagram</a></li>
-				<li><a href="https://twitter.com/rramosfabre">Twitter</a></li>
-				<li><a href="https://www.tiktok.com/@rramosfabre">TikTok</a></li>
-				<li><a href="https://www.youtube.com/@rramosfabre">YouTube</a></li>
-				<li><a href="https://www.twitch.tv/rramosfabre">Twitch</a></li>
-				<li><a href="https://github.com/rramosfabre">GitHub</a></li>
-			</ul>
-        </section> 
-        <section id="contacto">
-            <h1>Contacto</h1> 
-            <p>Puedes contactarme a través de mi correo electrónico:</p> 
-            <p class="email-link"><a href="mailto:rramosfabre@protonmail.com">rramosfabre@protonmail.com</a></p>
-        </section> 
-    </main> 
-    <footer> <!-- Añade un pie de página -->
-        <p>© 2023 Ramon Ramos Fabre. Todos los derechos reservados.</p> 
-    </footer> 
-</body> 
-</html> 
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-12">
+                <header class="text-center">
+                    <img id="profile-pic" src="rramosfabre-img.jpg" alt="Imagen de perfil de Ramon Ramos Fabre" class="img-fluid rounded-circle mb-3">
+                    <h1 id="profile-name">Ramon Ramos Fabre</h1>
+                </header>
+                <main>
+                    <div class="d-flex flex-column align-items-center">
+                        <a href="#about-me" class="btn btn-primary my-1" aria-label="Sobre mí">Sobre mí</a>
+                        <a href="#social-media" class="btn btn-primary my-1" aria-label="Redes sociales">Redes sociales</a>
+                        <a href="#contacto" class="btn btn-primary my-1" aria-label="Contacto">Contacto</a>
+                    </div>
+                    <section id="about-me" class="text-center mt-4">
+                        <h2>Sobre mí</h2>
+                        <p>¡Hola! Soy Ramon Ramos, un apasionado de la tecnología, amante de la naturaleza y de los animales y fanático del deporte, en especial el baloncesto. Además, me encanta sumergirme en libros y dar rienda suelta a mi creatividad con la escritura. ¡Bienvenidos a mi mundo! 😄📱🐶🏀📚✍️</p>
+                    </section>
+                    <section id="social-media" class="text-center mt-4">
+                        <h2>Redes sociales</h2>
+                        <div class="d-flex flex-wrap justify-content-center">
+                            <a href="https://www.facebook.com/rramosfabre" class="btn btn-info m-2" aria-label="Facebook de Ramon Ramos">Facebook</a>
+                            <a href="https://www.instagram.com/rramosfabre" class="btn btn-danger m-2" aria-label="Instagram de Ramon Ramos">Instagram</a>
+                            <a href="https://twitter.com/rramosfabre" class="btn btn-info m-2" aria-label="Twitter de Ramon Ramos">Twitter</a>
+                            <a href="https://www.tiktok.com/@rramosfabre" class="btn btn-primary m-2" aria-label="TikTok de Ramon Ramos">TikTok</a>
+                            <a href="https://www.youtube.com/@rramosfabre" class="btn btn-danger m-2" aria-label="YouTube de Ramon Ramos">YouTube</a>
+                            <a href="https://www.twitch.tv/rramosfabre" class="btn btn-info m-2" aria-label="Twitch de Ramon Ramos">Twitch</a>
+                            <a href="https://github.com/rramosfabre" class="btn btn-secondary m-2" aria-label="GitHub de Ramon Ramos">GitHub</a>
+                        </div>
+                    </section>
+                    <section id="contacto" class="text-center mt-4">
+                        <h2>Contacto</h2>
+                        <p>Puedes contactarme a través de mi correo electrónico:</p>
+                        <a href="mailto:rramosfabre@protonmail.com" class="btn btn-primary" aria-label="Enviar correo a Ramon Ramos">Enviar correo</a>
+                    </section>
+                </main>
+                <footer class="text-center mt-4">
+                    <p>© 2023 Ramon Ramos Fabre. Todos los derechos reservados.</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
