@@ -30,20 +30,18 @@ body {
   body {
     font-size: 18px;
   }
-  
+
   .social a {
     font-size: 18px;
     padding: 15px 25px;
     background-color: var(--social-bg-color);
     color: var(--social-link-color);
     border-radius: 10px;
-    text-decoration: none;
   }
 }
 
 ul {
   list-style: none;
-  margin: 0;
   padding: 0;
 }
 
@@ -51,20 +49,17 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-nav li {
-  margin-right: 20px;
+  padding: 0 10px;
 }
 
 nav a {
-  color: white;
+  color: var(--link-color);
   text-decoration: none;
   font-weight: bold;
 }
 
 nav a:hover {
-  color: #ccc;
+  color: var(--active-color);
 }
 
 header {
@@ -80,74 +75,66 @@ header {
   width: 150px;
   height: auto;
   border-radius: 50%;
-  margin-right: 20px;
+  transition: transform 0.5s;
 }
 
 #profile-pic:hover {
-   transform: scale(1.1);
-   transition-duration: .5s;
+  transform: scale(1.1);
 }
 
 #profile-name {
-   font-size:30px; 
-   font-weight:bold; 
-   color:var(--link-color);
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--link-color);
 }
 
 h1 {
-   margin-top:50px; 
-   font-size:30px;
-   color:var(--link-color);
+  margin-top: 50px;
+  font-size: 30px;
+  color: var(--link-color);
 }
 
 main, .tabcontent {
-   padding: 70px 50px;
-}
-
-section {
-   margin-bottom: 70px;
+  padding: 70px 50px;
 }
 
 .tabs {
-   background-color:var(--tab-bg-color); 
-   overflow:hidden; 
+  background-color: var(--tab-bg-color);
+  overflow: hidden;
 }
 
 .tab {
-   float:left; 
-   border:none; 
-   outline:none; 
-   cursor:pointer; 
-   padding: 20px 22px;
-   background-color: inherit; 
-   font-size: 17px; 
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 20px 22px;
+  background-color: inherit;
+  font-size: 17px;
 }
 
-.active {background-color:var(--active-color);}
-
-.active .tablink {color:white;}
+.active {
+  background-color: var(--active-color);
+}
 
 .about, .social {
-    padding: 70px 50px;
-    color: var(--about-text-color);
+  padding: 70px 50px;
 }
 
 .about {
-    background-color:var(--about-bg-color);
+  background-color: var(--about-bg-color);
+  color: var(--about-text-color);
 }
 
 .social {
-   background-color:var(--social-bg-color);
-   color:var(--social-link-color);
+  background-color: var(--social-bg-color);
 }
 
 .social a {
-   font-size:18px; 
-   color:var(--social-link-color); 
-   padding: 15px 25px;
-   background-color:var(--social-bg-color); 
-   border-radius:10px; 
-   text-decoration:none;
+  font-size: 18px;
+  padding: 15px 25px;
+  border-radius: 10px;
+  text-decoration: none;
 }
 
 #contacto p {
@@ -156,9 +143,8 @@ section {
 }
 
 .email a {
-  color: var(--link-color);
-  font-size: 16px;
   border: 2px solid var(--link-color);
-  color: var(--contact-text-color);
-}  
+  padding: 5px 10px;
+}
+
 
