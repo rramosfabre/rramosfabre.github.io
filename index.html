@@ -18,7 +18,6 @@
             flex-direction: column;
             align-items: center;
             font-family: 'Arial', sans-serif;
-            background: #f4f4f4; /* Light grey background for better contrast */
         }
         header {
             margin: 20px 0;
@@ -27,29 +26,35 @@
             width: 120px;
             height: 120px;
         }
+        .nav-links a, .social-links a, .email-link a {
+            color: white;
+            padding: 10px;
+            margin: 5px;
+            display: inline-block;
+        }
         .btn {
-            width: 300px;
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            background: #007bff; /* Bootstrap primary color for high contrast */
-            color: white; /* Ensures high contrast */
+            width: 300px; /* Ensures all buttons are the same width */
+            transition: transform 0.3s ease-in-out;
         }
         .btn:hover {
             transform: scale(1.05);
-            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
         }
         @media (max-width: 768px) {
             .btn {
                 width: 80%;
                 font-size: 16px;
             }
+            #about-me p, #additional-info p {
+                padding: 0 15px;
+            }
         }
-        section {
-            border: 1px solid #ccc;
-            padding: 10px;
+        #about-me p, #additional-info p {
+            text-align: justify;
+            max-width: 600px; /* Limita el ancho del texto para mejorar la legibilidad */
+            margin: auto;
+        }
+        #additional-info {
             margin-top: 20px;
-            border-radius: 8px;
-            background: #ffffff; /* High contrast against text */
         }
     </style>
 </head>
@@ -63,21 +68,28 @@
                 </header>
                 <main>
                     <div class="d-flex flex-column align-items-center">
-                        <a href="#about-me" class="btn btn-primary my-1" role="button" aria-label="Ir a la sección Sobre mí" aria-expanded="false">Sobre mí</a>
-                        <a href="#social-media" class="btn btn-primary my-1" role="button" aria-label="Ir a la sección Redes Sociales" aria-expanded="false">Redes sociales</a>
-                        <a href="#contacto" class="btn btn-primary my-1" role="button" aria-label="Ir a la sección Contacto" aria-expanded="false">Contacto</a>
+                        <a href="#about-me" class="btn btn-primary my-1" aria-label="Sobre mí">Sobre mí</a>
+                        <a href="#social-media" class="btn btn-primary my-1" aria-label="Redes sociales">Redes sociales</a>
+                        <a href="#contacto" class="btn btn-primary my-1" aria-label="Contacto">Contacto</a>
                     </div>
                     <section id="about-me" class="text-center mt-4">
                         <h2>Sobre mí</h2>
-                        <p>Descripción...</p>
+                        <p>Hola, soy Ramon Ramos Fabré, un apasionado defensor de la naturaleza y los animales, con un corazón creativo que se expresa a través de la literatura y el arte digital. Me dedico profesionalmente a la tecnología, especializado en seguridad informática. Disfruto del deporte, especialmente baloncesto, y escribo sobre política y deportes.</p>
+                    </section>
+                    <section id="additional-info" class="text-center mt-4">
+                        <h2>Más sobre mí</h2>
+                        <p>Este espacio está reservado para más información sobre mis proyectos y actividades. Mantente atento para actualizaciones.</p>
                     </section>
                     <section id="social-media" class="text-center mt-4">
                         <h2>Redes sociales</h2>
-                        <!-- Links sociales aquí -->
+                        <div class="d-flex flex-wrap justify-content-center">
+                            <!-- Enlaces de redes sociales aquí -->
+                        </div>
                     </section>
                     <section id="contacto" class="text-center mt-4">
                         <h2>Contacto</h2>
-                        <!-- Información de contacto aquí -->
+                        <p>Puedes contactarme a través de mi correo electrónico:</p>
+                        <a href="mailto:rramosfabre@protonmail.com" class="btn btn-primary" aria-label="Enviar correo a Ramon Ramos">Enviar correo</a>
                     </section>
                 </main>
                 <footer class="text-center mt-4">
@@ -86,19 +98,5 @@
             </div>
         </div>
     </div>
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-                this.setAttribute('aria-expanded', 'true');
-            });
-        });
-    </script>
 </body>
 </html>
-
-
-
