@@ -29,5 +29,6 @@ function createLinkElements() {
     feather.replace();
 }
 
-
+// Ejecutar la función cuando el DOM esté cargado
 document.addEventListener('DOMContentLoaded', createLinkElements);
+
