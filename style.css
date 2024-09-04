@@ -1,15 +1,20 @@
 /* Estilo general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que los márgenes y paddings se calculen correctamente */
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #000000; /* Fondo negro */
     color: #ffffff; /* Texto blanco */
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    box-sizing: border-box; /* Asegura que los márgenes y paddings se calculen correctamente */
+    margin: 0;
+    padding: 0;
 }
 
 /* Contenedor principal */
@@ -39,7 +44,7 @@ h1 {
     margin: 10px 0;
 }
 
-/* Bio debajo del nombre */
+/* Biografía debajo del nombre */
 .bio {
     font-size: 1rem;
     color: #d1d5db;
