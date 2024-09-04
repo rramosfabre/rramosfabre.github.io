@@ -1,21 +1,30 @@
-function openTab(evt, tabName) {
-  const tabContents = document.querySelectorAll(".tabcontent");
-  const targetTab = document.getElementById(tabName);
+const links = [
+    { name: 'GitHub', icon: 'github', url: 'https://github.com/rramosfabre' },
+    { name: 'LinkedIn', icon: 'linkedin', url: 'https://www.linkedin.com/in/ramón-o-ramos-fabré/' },
+    { name: 'Instagram', icon: 'instagram', url: 'https://instagram.com/rramosfabre' },
+    { name: 'Twitter', icon: 'twitter', url: 'https://twitter.com/rramosfabre' },
+    { name: 'Email', icon: 'mail', url: 'mailto:rramosfabre@protonmail.com' },
+];
 
-  tabContents.forEach(tab => {
-    tab.style.display = "none";
-  });
-
-  if (!targetTab) {
-    console.error(`No existe un elemento con id ${tabName}`);
-    return; // Salir de la función si el tab especificado no existe
-  }
-
-  const tabs = document.querySelectorAll(".tab");
-  tabs.forEach(tab => {
-    tab.classList.remove("active");
-  });
-
-  targetTab.style.display = "block";
-  evt.currentTarget.classList.add("active");
+function createLinkElements() {
+    const linksContainer = document.getElementById('links-container');
+    
+    links.forEach(link => {
+        const linkElement = document.createElement('a');
+        linkElement.href = link.url;
+        linkElement.className = 'link';
+        linkElement.target = '_blank';
+        linkElement.rel = 'noopener noreferrer';
+        
+        linkElement.innerHTML = `
+            <span>${link.name}</span>
+            <i data-feather="${link.icon}"></i>
+        `;
+        
+        linksContainer.appendChild(linkElement);
+    });
+    
+    feather.replace();
 }
+
+document.addEventListener('DOMContentLoaded', createLinkElements);
