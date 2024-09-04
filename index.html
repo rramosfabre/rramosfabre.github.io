@@ -2,104 +2,19 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Página web personal de Ramon Ramos Fabre.">
-    <meta name="keywords" content="Ramon Ramos Fabre, Página web personal, Tecnología, Naturaleza, Animales, Deporte, Baloncesto, Libros, Escritura">
-    <title>Ramon Ramos - Página web personal</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body, html {
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-family: 'Arial', sans-serif;
-        }
-        header {
-            margin: 20px 0;
-        }
-        #profile-pic {
-            width: 120px;
-            height: 120px;
-        }
-        .nav-links a, .social-links a, .email-link a {
-            color: white;
-            padding: 10px;
-            margin: 5px;
-            display: inline-block;
-        }
-        .btn {
-            width: 300px; /* Ensures all buttons are the same width */
-            transition: transform 0.3s ease-in-out;
-        }
-        .btn:hover {
-            transform: scale(1.05);
-        }
-        @media (max-width: 768px) {
-            .btn {
-                width: 80%;
-                font-size: 16px;
-            }
-            #about-me p {
-                padding: 0 15px;
-            }
-        }
-        #about-me p {
-            text-align: justify;
-            max-width: 600px; 
-            margin: auto;
-            font-size: 14px; 
-            margin-bottom: 15px; 
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raúl Ramos Fabre - Enlaces</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-6 col-12">
-                <header class="text-center">
-                    <img id="profile-pic" src="rramosfabre-profileimg.jpg" alt="Imagen de perfil de Ramon Ramos Fabre" class="img-fluid rounded-circle mb-3">
-                    <h1 id="profile-name">Ramon Ramos Fabre</h1>
-                </header>
-                <main>
-                    <div class="d-flex flex-column align-items-center">
-                        <a href="sobre_mi_cat.html" class="btn btn-primary my-1" aria-label="Sobre mi (CAT)">Sobre mi (CAT)</a>
-                        <a href="sobre_mi_es.html" class="btn btn-primary my-1" aria-label="Sobre mí (ES)">Sobre mí (ES)</a>
-                        <a href="about_me_eng.html" class="btn btn-primary my-1" aria-label="About me (ENG)">About me (ENG)</a>
-                    </div>
-                    <section id="social-media" class="text-center mt-4">
-                        <h2>Redes sociales</h2>
-                        <div class="d-flex flex-wrap justify-content-center">
-                             <a href="https://www.facebook.com/rramosfabre" class="btn btn-info m-2" aria-label="Facebook de Ramon Ramos">Facebook</a>
-                            <a href="https://www.instagram.com/rramosfabre" class="btn btn-danger m-2" aria-label="Instagram de Ramon Ramos">Instagram</a>
-                            <a href="https://twitter.com/rramosfabre" class="btn btn-info m-2" aria-label="Twitter de Ramon Ramos">Twitter</a>
-                            <a href="https://www.tiktok.com/@rramosfabre" class="btn btn-primary m-2" aria-label="TikTok de Ramon Ramos">TikTok</a>
-                            <a href="https://www.youtube.com/@rramosfabre" class="btn btn-danger m-2" aria-label="YouTube de Ramon Ramos">YouTube</a>
-                            <a href="https://www.twitch.tv/rramosfabre" class="btn btn-info m-2" aria-label="Twitch de Ramon Ramos">Twitch</a>
-                            <a href="https://github.com/rramosfabre" class="btn btn-secondary m-2" aria-label="GitHub de Ramon Ramos">GitHub</a>
-                            <a href="https://www.coursera.org/learner/ramon-o-ramos-fa-1996" class="btn btn-secondary m-2" aria-label="Coursera de Ramon Ramos">Coursera</a>
-                            <a href="https://app.hackthebox.com/profile/1125289" class="btn btn-secondary m-2" aria-label="Hackthebox de Ramon Ramos">Hackthebox</a>
-                        </div>
-                    </section>
-                    <section id="tienda" class="text-center mt-4">
-                        <h2>Tienda</h2>
-                        <a href="https://ramosfabre.myshopify.com" class="btn btn-success m-2" aria-label="Tienda de Ramon Ramos">Visita mi tienda en Shopify</a>
-                    </section>
-                    <section id="contacto" class="text-center mt-4">
-                        <h2>Contacto</h2>
-                        <p>Puedes contactarme a través de mi correo electrónico:</p>
-                        <a href="mailto:rramosfabre@protonmail.com" class="btn btn-primary" aria-label="Enviar correo a Ramon Ramos">Enviar correo</a>
-                    </section>
-                </main>
-                <footer class="text-center mt-4">
-                    <p>© 2023 Ramon Ramos Fabre. Todos los derechos reservados.</p>
-                </footer>
-            </div>
+        <img src="rramosfabre-profileimg.jpg" alt="Ramon Ramos Fabre" class="profile-image">
+        <h1>Ramon Ramos Fabre</h1>
+        <p class="bio">Informático | Ciberseguridad | Desarrollador Web | Analista de Datos</p>
+        <div id="links-container"></div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
