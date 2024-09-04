@@ -10,21 +10,27 @@ function createLinkElements() {
     const linksContainer = document.getElementById('links-container');
     
     links.forEach(link => {
+        // Crear el elemento de enlace
         const linkElement = document.createElement('a');
         linkElement.href = link.url;
         linkElement.className = 'link';
         linkElement.target = '_blank';
         linkElement.rel = 'noopener noreferrer';
+        linkElement.setAttribute('aria-label', link.name); // Mejora de accesibilidad
         
+        // Añadir el contenido del enlace
         linkElement.innerHTML = `
             <span>${link.name}</span>
             <i data-feather="${link.icon}"></i>
         `;
         
+        // Añadir el enlace al contenedor
         linksContainer.appendChild(linkElement);
     });
     
+    // Reemplazar iconos de Feather
     feather.replace();
 }
 
+// Ejecutar la función cuando el DOM esté cargado
 document.addEventListener('DOMContentLoaded', createLinkElements);
